@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>hepi borday</title>
+
+    <link rel="icon" type="image/x-icon" href="star.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="doodle">
+    <div class="page-border border">
+      <!-- loading screen -->
+      <div id="loading-screen" class="screen active">
+        <p id="loading-txt-A">shipping your package<span class=dots></span></p>
+        <p id="loading-txt-B">delivering to your doorstep<span class="dots"></span></p>
+      </div>
+
+      <!-- intro screen -->
+      <div id="intro-screen" class="screen">
+        <p>tadaa, a little something from paii !! unwrap?</p>
+        <img src="images/gift-intro.png" alt="gift-intro.png">
+        <button onClick="goToScreen('gift-screen')">yes</button>
+        <button onClick="goToScreen('gift-screen')">you have no choice</button>
+      </div>
+
+      <!-- gift screen -->
+      <div id="gift-screen" class="screen">
+        <p>seee, i got u a bunch of stuff. press anything hehe</p>
+
+        <div id="gift-grid">
+          <!-- camera -->
+          <div id="camera-gift" class="gift-item">
+            <img src="images/camera.png" alt="camera.png" onClick="goToScreen('camera-slideshow')">
+          </div>
+
+          <!-- self-care -->
+          <div id="self-care-gift" class="gift-item">
+            <img src="images/self-care.png" alt="self-care.png" onClick="goToScreen('self-care-pouch')">
+          </div>
+
+          <!-- art -->
+          <div id="drawing-gift" class="gift-item">
+            <img src="images/drawing.png" alt="drawing.png" onClick="goToScreen('drawing-page')">
+          </div>
+
+          <!-- music box -->
+          <div id="music-box-gift" class="gift-item">
+            <img src="images/music-box-main.png" alt="music-box.png" onClick="goToScreen('music-box-song')">
+          </div>
+        </div>
+
+        <button onclick="goToScreen('ending-a')">tap when done</button>
+      </div>
+      
+      <!-- gift screen redirects -->
+      <div id="camera-slideshow" class="screen">
+        <p>a trip down memory lane ദ്ദി ˉ꒳ˉ )✧ </p>
+
+        <div id="slideshow-pics">
+          <div class="pic-slides">
+            <div class="number-text">1/13</div>
+            <img src="images/9-15-25.jpeg" alt="9-15-25.jpeg">
+            <div class="slides-text">9/15/25 - taxi driver in captivity</div>
+          </div>
+
+          <div class="pic-slides">
+            <div class="number-text">2/13</div>
+            <img src="images/9-25-25.jpeg" alt="9-25-25.jpeg">
+            <div class="slides-text">9/25/25 - sky players tryna avoid playing sky</div>
+          </div>
+
+          <div class="pic-slides">
+            <div class="number-text">3/13</div>
+            <img src="images/9-29-25-1.jpeg" alt="9-29-25-1.jpeg">
+            <div class="slides-text">9/29/25 - me trying and failing to study</div>
+          </div>
+
+          <div class="pic-slides">
+            <div class="number-text">4/13</div>
+            <img src="images/9-29-25.jpeg" alt="9-29-25.jpeg">
+            <div class="slides-text">9/29/25 - and you trying and failing to keep me from socializing LMAO</div>
+          </div>
+
+          <div class="pic-slides">
+            <div class="number-text">5/13</div>
+            <img src="images/9-30-25.jpeg" alt="9-30-25.jpeg">
+            <div class="slides-text">9/30/25 - e</div>
+          </div>
+
+          <div class="pic-slides">
+            <div class="number-text">6/13</div>
+            <img src="images/10-7-25.jpeg" alt="10-7-25.jpeg">
+            <div class="slides-text">10/7/25 - <del>charlie's angels</del> angel's... charlies?</div>
+          </div>
+
+          <div class="pic-slides">
+            <div class="number-text">7/13</div>
+            <img src="images/10-31-25.jpeg" alt="10-31-25.jpeg">
+            <div class="slides-text">10/31/25 - guess where hehe (i dropped your ass behind a portal on cr)</div>
+          </div>
+
+          <div class="pic-slides">
+            <div class="number-text">8/13</div>
+            <img src="images/11-2-25.jpeg" alt="11-2-25.jpeg">
+            <div class="slides-text">11/2/25 - case study #18218</div>
+          </div>
+
+          <div class="pic-slides">
+            <div class="number-text">9/13</div>
+            <img src="images/11-4-25.jpeg" alt="11-4-25.jpeg">
+            <div class="slides-text">11/4/25 - non-flammable taxi driver</div>
+          </div>
+
+          <div class="pic-slides">
+            <div class="number-text">10/13</div>
+            <img src="images/11-14-25.jpeg" alt="11-14-25.jpeg">
+            <div class="slides-text">11/14/25 - u i i a i</div>
+          </div>
+
+          <div class="pic-slides">
+            <div class="number-text">11/13</div>
+            <img src="images/13-1-16-2026.jpeg" alt="1-16-2026.jpeg">
+            <div class="slides-text">1/16/26 - abandon english, communicate in hieroglyphics</div>
+          </div>
+
+          <div class="pic-slides">
+            <div class="number-text">12/13</div>
+            <img src="images/13-4-30-26.jpeg" alt="4-30-26.jpeg">
+            <div class="slides-text">4/30/26 - non-flammable twins</div>
+          </div>
+
+          <div class="pic-slides">
+            <div class="number-text">13/13</div>
+            <img src="images/13-5-11-26.jpeg" alt="5-11-26.jpeg">
+            <div class="slides-text">5/11/26 - little side quest</div>
+          </div>
+
+          <button class="prev" onclick="plusSlides(-1)">prev</button>
+          <button class="next" onclick="plusSlides(1)">next</button>
+
+        </div>
+
+        <button onClick="goToScreen('gift-screen')">x</button>
+      </div>
+
+      <div id="self-care-pouch" class="screen">
+        <p>here are self-care thingies for you, for the in-between breaks where we're both busy!</p>
+
+        <div id="self-care-grid">
+          <div class="sc-item">
+            <img src="images/sc1.png" alt="sc1.png" onclick="wiggleImage(this)">
+          </div>
+
+          <div class="sc-item">
+            <img src="images/sc2.png" alt="sc2.png" onclick="wiggleImage(this)">
+          </div>
+          
+          <div class="sc-item">
+            <img src="images/sc3.png" alt="sc3.png" onclick="wiggleImage(this)">
+          </div>
+
+          <div class="sc-item">
+            <img src="images/sc4.png" alt="sc4.png" onclick="wiggleImage(this)">
+          </div>
+        </div>
+
+        <button onClick="goToScreen('gift-screen')">x</button>
+      </div>
+
+      <div id="drawing-page" class="screen">
+        <p>idk how downloads work on apple TT  but i DO know that i am exceptionally good at drawing dogs fr</p>
+
+        <div id="dog-drawing-container">
+          <button onclick="showDogDrawing()">walking-the-dogs.png</button>
+        </div>
+        
+        <img id="dog-drawing" src="images/walking-the-dogs.png" alt="walking-the-dogs" class="hidden">
+
+        <button onClick="goToScreen('gift-screen')">x</button>
+      </div>
+
+      <div id="music-box-song" class="screen">
+        <p>you mentioned that you haven't received a music box before. does a virtual one count? (can tap it on and off ◕⩊◕ )</p>
+
+        <div id="actual-mb">
+          <img id="music-box-img" src="images/music-box-closed.png" alt="music-box-closed.png" onclick="toggleMusicBox()">
+          
+          <audio id="music-box-audio" loop>
+            <source src="audio/melody.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+
+        <button onclick="closeMusicBoxScreen()">x</button>
+      </div>
+
+      <!-- ending a screen -->
+      <div id="ending-a" class="screen">
+        <p>happy birthday sam !! you're the coolest twin ever, and i hope you have a great birth month :D</p>
+        <p>back to start?</p>
+        <button onclick="startLoadingSequence()">yes</button>
+        <button onclick="goToScreen('ending-b')">no</button>
+      </div>
+
+      <!-- ending b screen -->
+      <div id="ending-b" class="screen">
+        <p>stop i didn't plan this far</p>
+        <button onClick="goToScreen('letter')">OR DID I</button>
+      </div>
+
+      <!-- letter screen -->
+      <div id="letter" class="screen">
+        <p>a letter !</p>
+
+        <div id="letter-page">
+          <p>dear sam,</p>
+          <p>happy (belated) birthday !! i'm centuries late but TRUSTT i never forget hhwehe</p>
+          <p>i will always think you're the coolest too, never doubt that! it's like a warm hug, to find someone that i can just be boring and exist with. that'd be much of our lives in crisis haha, but i hope we can be doing-anything-and-nothing twins for a long time. the world feels a lot less like of a big deal, when i've got a twin thousands of miles away.</p>
+          <p>we <i>maaay</i> get busy like, five times a year; tell me everything anyway! in return, you'll be hearing about both my milestones and most atomic poops (no in between).</p>
+          <p>hope you like this silly little thing hehwhh. i'll send you actual packages someday, just you wait !!</p>
+          <p>your <del>best passenger ever</del> friend,</p>
+          <p>paii</p>
+          <img src="images/bromie-doodle.png" alt="bromie-doodle.png">
+        </div>
+
+        <p>back to start?</p>
+        <button onclick="startLoadingSequence()">yes</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
